@@ -1,0 +1,72 @@
+html {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial;
+}
+
+#controls {
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+    padding: 10px;
+    border: solid black 2px;
+    background-color: white;
+    width: 200px;
+}
+
+#kalender {
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#note {
+    color: red;
+}
+
+.dagBlok {
+    text-align: center;
+    border: black 1px solid;
+    box-sizing: border-box;
+    width: calc(100% / 7);
+    height: 134px;
+}
+
+.weekdag {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.datum {
+    font-weight: bold;
+    margin: 2px;
+    font-size: 13px;
+}
+
+@media print {
+
+    #kalender {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #controls {
+        display: none;
+    }
+
+}
+
+@page {
+    margin: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="controls">
+    <label>start:</label>
+    <input type="date" id="start" value="2023-05-01"><br>
+    <label>end:</label>
+    <input type="date" id="end" value="2023-06-25"><br>
+    <button onclick="run()">run</button>
+    <label id="note"></label>
+    <br>
+    <label>CTRL + P for printing</label>
+    <br>
+</div>
+    <div id="kalender">
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">maandag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">dinsdag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">woensdag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">donderdag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">vrijdag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">zaterdag</p>
+        </div>
+        <div style="height: 50px" class="dagBlok">
+            <p class="weekdag">zondag</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
