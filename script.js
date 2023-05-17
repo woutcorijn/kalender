@@ -15,6 +15,7 @@ function run() {
         days = time_difference/(1000 * 60 * 60 * 24);
 
         drawBlocks(startDate, days);
+        document.getElementById("note").innerText = "";
     } else {
         document.getElementById("note").innerText = "Select a monday for start date!";
     }
