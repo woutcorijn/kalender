@@ -8,7 +8,7 @@ body {
 }
 
 #controls {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     margin: 10px;
     padding: 10px;
