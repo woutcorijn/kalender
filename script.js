@@ -1,24 +1,23 @@
 
-var days = 1;
+var days = 55;
 var kalender = document.getElementById("kalender");
-
 var header = kalender.cloneNode(true);
 
+var dateInput = document.getElementById("start");
+
+dateInput.valueAsDate = new Date();
+run();
+
+dateInput.addEventListener("change", run);
+
 function run() {
-    var start = document.getElementById("start").value;
-    var end = document.getElementById("end").value;
+    var start = dateInput.value;
 
     var startDate = new Date(start);
-    var endDate = new Date(end);
-    if(startDate.getDay() == 1) {
-        var time_difference = endDate.getTime() - startDate.getTime();
-        days = time_difference/(1000 * 60 * 60 * 24);
+    var selectedDate = startDate.getDay();
+    var monday = new Date(startDate.getTime() - (selectedDate - 1) * 24 * 60 * 60 * 1000);
 
-        drawBlocks(startDate, days);
-        document.getElementById("note").innerText = "";
-    } else {
-        document.getElementById("note").innerText = "Select a monday for start date!";
-    }
+    drawBlocks(monday, days);
 }
 
 function drawBlocks(startDate, days) {
