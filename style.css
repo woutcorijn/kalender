@@ -4,7 +4,9 @@ html {
 
 body {
     margin: 0px;
+    padding: 0px !important;
     font-family: Arial;
+    color: black !important;
 }
 
 #controls {
@@ -12,7 +14,6 @@ body {
     z-index: 1;
     margin: 10px;
     padding: 10px;
-    border: solid black 2px;
     background-color: white;
     width: 200px;
 }
